@@ -5,10 +5,12 @@ public class Line_Comparison {
 	
 	public static int x,x1,x2,x3,y,y1,y2,y3;
     public static double distance1,distance2;
+    
     public static void main(String[] args) {
 		System.out.println("Welcome To Line Comparison program");
 		input();
 		distance();
+		equality();
 	}
     
 		 public static void input() {
@@ -36,6 +38,15 @@ public class Line_Comparison {
 		            System.out.println("Distance = " +distance1);
 		            distance2=Math.sqrt((x3-x2)*(x3-x2) + (y3-y2)*(y3-y2));
 		            System.out.println("Distance = " +distance2);
+		            
+		        }
+		            public static void equality() {
+		    	        if (distance1 == distance2)
+		    	            System.out.print("Length are same ");
+		    	        else if (distance1 > distance2)
+		    	            System.out.print(" distance1 is greater ");
+		    	        else
+		    	            System.out.println("distance2 is greater");
 
 		    }
 		}
